@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <title>Fast Food Store</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img src="image/lgo.png" alt="" class="nav__logo-img">
+                </div>
+
+                <ul class="menu">
+                    <div class="menu__times">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link-danger">Homepage</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Menu</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Sale off</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">News</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__btns">
+                    <a href="#" class="nav__signin-btn">Sign in</a>
+                    <a href="#" class="nav__login-btn">Logn in</a>
+                </div>
+
+                <div class="nav__bars">
+                    <i class="fa fas fa-hamburger"></i>
+                </div>
+            </nav>
+
+            <section class="header-bottom">
+
+                <div class="header-left">
+
+                    <h3 class="header-left__title">
+                        Order your favourite food
+                    </h3>
+
+                    <p class="header-left__desc">
+                        Hamburger has many flavors, have you tried Cheese Beef Hamburger?
+                    </p>
+
+                    <p class="header-left__total desktop">Total order
+                        <span class="header-left__total-meduim">:</span>
+                        <span class="header-left__total-big">$5.39</span>
+                    </p>
+
+                    <div class="header-left__action desktop">
+
+                        <div class="header-left__numbers">
+                            <button class="header-left__add"><i class="fa fa-plus"></i></button>
+                            <p class="header-left_number">3</p>
+                            <button class="header-left__remove"><i class="fa fa-minus"></i></button>
+                        </div>
+
+                        <a href="#">
+                            <div class="header-left__order">
+                                <div class="header-left__basket"><i class="fa fa-shopping-basket"></i></div>
+                                <p class="header-left__text">order now</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-right">
+                    <div class="header-right__delivery">
+                        <div class="header-right__time">
+                            <div class="header-right__alarm"><i class="fa fa-clock"></i></div>
+                            <h3 class="header-right__title">Delivery</h3>
+                        </div>
+                        <p class="header-right__desc">30 mins</p>
+                    </div>
+                    <img src="image/Group 15.png" alt="" class="header-right_img">
+                </div>
+
+                <p class="header-left__total mobile">Total order
+                    <span class="header-left__total-meduim">:</span>
+                    <span class="header-left__total-big">$5.39</span>
+                </p>
+
+                <div class="header-left__action mobile">
+
+                    <div class="header-left__numbers">
+                        <button class="header-left__add"><i class="fa fa-plus"></i></button>
+                        <p class="header-left_number">3</p>
+                        <button class="header-left__remove"><i class="fa fa-minus"></i></button>
+                    </div>
+
+                    <a href="#">
+                        <div class="header-left__order">
+                            <div class="header-left__basket"><i class="fa fa-shopping-basket"></i></div>
+                            <p class="header-left__text">order now</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <section class="main-menu">
+
+                <h3 class="main-menu__title">MENU</h3>
+                <span class="main-menu_rectangle"></span>
+                <div class="main-menu__Grouping">
+
+                    <button class="main-menu__group  main-menu__group-active">
+                        <span class="main-menu__percent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.2193 0.607955C10.607 -0.199478 9.39319 -0.199478 8.78095 0.607955L7.40692 2.42007C7.18858 2.70802 6.83187 2.85577 6.47387 2.80655L4.22093 2.49678C3.21707 2.35876 2.35876 3.21707 2.49678 4.22092L2.80655 6.47387C2.85577 6.83187 2.70802 7.18858 2.42007 7.40692L0.607955 8.78095C-0.199478 9.39319 -0.199478 10.607 0.607955 11.2193L2.42007 12.5933C2.70802 12.8116 2.85577 13.1683 2.80655 13.5263L2.49678 15.7793C2.35876 16.7831 3.21707 17.6415 4.22092 17.5034L6.47387 17.1937C6.83187 17.1444 7.18858 17.2922 7.40691 17.5801L8.78095 19.3923C9.39319 20.1997 10.607 20.1997 11.2193 19.3923L12.5933 17.5801C12.8116 17.2922 13.1683 17.1444 13.5263 17.1937L15.7793 17.5034C16.7831 17.6415 17.6415 16.7831 17.5034 15.7793L17.1937 13.5263C17.1444 13.1683 17.2922 12.8116 17.5801 12.5933L19.3923 11.2193C20.1997 10.607 20.1997 9.39319 19.3923 8.78095L17.5801 7.40692C17.2922 7.18858 17.1444 6.83187 17.1937 6.47387L17.5034 4.22092C17.6415 3.21707 16.7831 2.35876 15.7793 2.49678L13.5263 2.80655C13.1683 2.85577 12.8116 2.70802 12.5933 2.42007L11.2193 0.607955ZM12.7071 7.2929C12.3166 6.90237 11.6834 6.90237 11.2929 7.2929L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.2929ZM8 9C7.44772 9 7 8.55229 7 8C7 7.44772 7.44772 7 8 7C8.55229 7 9 7.44772 9 8C9 8.55229 8.55229 9 8 9ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                                    fill="#323232" />
+                            </svg>
+                        </span>
+                        Best seller
+                    </button>
+
+                    <button class="main-menu__group">
+                        <span class="main-menu__bambur"><i class="fa fa-hamburger"></i></span>
+                        Hamburger
+                    </button>
+
+                    <button class="main-menu__group">
+                        <span class="main-menu__drink"><i class="fa fa-mug-hot"></i></span>
+                        Drink
+                    </button>
+
+                    <button class="main-menu__group">
+                        <span class="main-menu__ice"><i class="fa fa-ice-cream"></i></span>
+                        Dessert
+                    </button>
+
+                    <button class="main-menu__group">
+                        <span class="main-menu_chicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12"
+                                viewBox="0 0 16 12" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.6785 4.35254C10.8842 3.94614 11 3.4866 11 3C11 1.34315 9.65685 0 8 0C6.34315 0 5 1.34315 5 3C5 3.4866 5.11585 3.94614 5.32147 4.35254C2.23647 5.32706 0 8.21188 0 11.619C0 11.8294 0.170559 12 0.380953 12H15.619C15.8294 12 16 11.8294 16 11.619C16 8.21188 13.7635 5.32706 10.6785 4.35254ZM9 3C9 3.55228 8.55228 4 8 4C7.44772 4 7 3.55228 7 3C7 2.44772 7.44772 2 8 2C8.55228 2 9 2.44772 9 3Z"
+                                    fill="#504F4F" />
+                            </svg></span>
+                        Fried Chicken
+                    </button>
+
+
+
+                </div>
+
+
+            </section>
+
+            <section class="main-bestseller">
+
+                <div class="main-bestseller__product">
+
+                    <img src="image/2.png" alt="" class="main-bestseller__img">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">Cheese Beef Hamburger</h3>
+                    <p class="main-bestseller__desc">fried chicken balls, french fries</p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">5.39$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+
+                <div class="main-bestseller__product">
+                    <div class="main-bestseller__discount">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_263_621)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.8341 2.50833C26.5113 0.763884 23.8889 0.763884 22.5661 2.50834L19.5975 6.42339C19.1258 7.0455 18.3552 7.36472 17.5817 7.25837L12.7142 6.58913C10.5454 6.29093 8.69103 8.1453 8.98923 10.3141L9.65847 15.1816C9.76482 15.9551 9.4456 16.7257 8.82349 17.1974L4.90844 20.166C3.16398 21.4888 3.16399 24.1112 4.90844 25.434L8.82349 28.4026C9.4456 28.8743 9.76482 29.6449 9.65847 30.4184L8.98923 35.2859C8.69103 37.4547 10.5454 39.3091 12.7142 39.0109L17.5817 38.3416C18.3552 38.2353 19.1258 38.5545 19.5975 39.1766L22.5661 43.0917C23.8889 44.8361 26.5113 44.8361 27.8341 43.0917L30.8027 39.1766C31.2744 38.5545 32.045 38.2353 32.8185 38.3416L37.686 39.0109C39.8548 39.3091 41.7092 37.4547 41.411 35.2859L40.7417 30.4184C40.6354 29.6449 40.9546 28.8743 41.5767 28.4026L45.4918 25.434C47.2362 24.1112 47.2362 21.4888 45.4918 20.166L41.5767 17.1974C40.9546 16.7257 40.6354 15.9551 40.7417 15.1816L41.411 10.3141C41.7092 8.1453 39.8548 6.29093 37.686 6.58913L32.8185 7.25837C32.045 7.36472 31.2744 7.0455 30.8027 6.42339L27.8341 2.50833Z"
+                                    fill="#FFC300" />
+                                <path
+                                    d="M17.9384 30.3096C17.4208 30.5013 16.9223 30.5835 16.443 30.5562C15.9685 30.5187 15.5552 30.3817 15.2031 30.1452C14.8484 29.9012 14.588 29.5668 14.4222 29.142L15.5138 28.7378C15.6874 29.0915 15.9527 29.3473 16.3097 29.5051C16.6715 29.6527 17.1074 29.632 17.6176 29.4431C18.1052 29.2626 18.4434 29.0009 18.6321 28.658C18.8255 28.3049 18.8514 27.937 18.7097 27.5544C18.5986 27.2543 18.4258 27.041 18.1913 26.9146C17.9568 26.7881 17.6977 26.722 17.414 26.7161C17.1303 26.7103 16.7576 26.7289 16.2958 26.7719C15.7281 26.8285 15.2618 26.8477 14.8967 26.8293C14.5391 26.8081 14.195 26.6967 13.8643 26.495C13.5384 26.2829 13.2852 25.9331 13.1046 25.4454C12.9463 25.0178 12.9148 24.5987 13.0101 24.188C13.1055 23.7774 13.3149 23.4098 13.6383 23.0853C13.9693 22.758 14.3898 22.4999 14.9 22.311C15.6352 22.0388 16.3034 22.0004 16.9047 22.1957C17.5134 22.3883 17.9603 22.7774 18.2454 23.3628L17.12 23.7795C16.9714 23.4933 16.7166 23.2891 16.3557 23.1668C15.992 23.037 15.5813 23.0568 15.1237 23.2263C14.6961 23.3846 14.3889 23.6263 14.2021 23.9514C14.0126 24.269 13.9915 24.6266 14.1387 25.0242C14.2443 25.3093 14.4092 25.5127 14.6334 25.6344C14.8651 25.7533 15.1153 25.8185 15.384 25.8299C15.6574 25.831 16.0301 25.8125 16.5022 25.7741C17.0726 25.725 17.5418 25.7134 17.9096 25.7393C18.2747 25.7576 18.624 25.8714 18.9574 26.0807C19.288 26.2824 19.545 26.6309 19.7284 27.126C19.87 27.5086 19.9021 27.9062 19.8245 28.3188C19.747 28.7315 19.5483 29.1164 19.2284 29.4737C18.9086 29.831 18.4786 30.1096 17.9384 30.3096ZM20.4944 25.7419C20.261 25.1117 20.1844 24.5131 20.2645 23.946C20.3417 23.3714 20.5531 22.8709 20.8985 22.4444C21.2514 22.0152 21.7017 21.6991 22.2494 21.4963C22.7895 21.2963 23.3015 21.239 23.7852 21.3243C24.2689 21.4097 24.6736 21.5925 24.9992 21.8729L24.5825 20.7476L25.6178 20.3642L27.9013 26.5311L26.866 26.9144L26.4409 25.7666C26.3717 26.2017 26.179 26.6143 25.8628 27.0044C25.5513 27.3842 25.1292 27.6727 24.5965 27.8699C24.0489 28.0727 23.5037 28.121 22.9611 28.0148C22.4184 27.9086 21.9293 27.6589 21.4937 27.2657C21.058 26.8725 20.7249 26.3646 20.4944 25.7419ZM25.7201 23.8198C25.5479 23.3546 25.3041 22.9842 24.9887 22.7086C24.6734 22.4329 24.3211 22.2648 23.9318 22.2042C23.5473 22.1333 23.1637 22.1687 22.7811 22.3104C22.3985 22.452 22.083 22.6712 21.8345 22.968C21.5861 23.2647 21.432 23.6203 21.3722 24.0349C21.3125 24.4494 21.3687 24.8893 21.5409 25.3544C21.7159 25.827 21.9625 26.2049 22.2806 26.4881C22.596 26.7637 22.9459 26.937 23.3304 27.0079C23.7122 27.0713 24.0944 27.0321 24.477 26.8905C24.8596 26.7488 25.1751 26.5296 25.4236 26.2329C25.6767 25.9259 25.8332 25.5651 25.8929 25.1505C25.9499 24.7285 25.8923 24.2849 25.7201 23.8198ZM27.5724 17.1836L30.6559 25.5111L29.6318 25.8903L26.5484 17.5628L27.5724 17.1836ZM36.7986 19.4617C36.8709 19.6568 36.936 19.8672 36.9941 20.0931L32.0651 21.9182C32.3276 22.512 32.7103 22.912 33.2132 23.1182C33.7208 23.3141 34.2447 23.3121 34.7849 23.1121C35.2275 22.9482 35.5576 22.7108 35.7752 22.3999C35.9975 22.0787 36.1048 21.7234 36.097 21.3338L37.1999 20.9255C37.2543 21.5792 37.1034 22.1854 36.7471 22.7438C36.3881 23.2948 35.841 23.7064 35.1057 23.9786C34.5206 24.1953 33.9468 24.2584 33.3844 24.1681C32.8296 24.075 32.332 23.8369 31.8916 23.454C31.4485 23.0636 31.1088 22.5496 30.8727 21.9119C30.6366 21.2742 30.5572 20.668 30.6345 20.0934C30.7117 19.5189 30.932 19.0193 31.2952 18.5948C31.6631 18.16 32.1471 17.8314 32.7473 17.6092C33.3325 17.3925 33.8974 17.3284 34.4419 17.4168C34.9865 17.5052 35.4622 17.73 35.8689 18.0913C36.2804 18.4422 36.5903 18.899 36.7986 19.4617ZM35.6617 19.6396C35.5172 19.2495 35.3073 18.9476 35.032 18.7339C34.7539 18.5127 34.4384 18.3864 34.0855 18.3549C33.7374 18.3132 33.3832 18.359 33.0231 18.4924C32.5055 18.6841 32.124 19.013 31.8786 19.4792C31.6407 19.9427 31.6038 20.4767 31.768 21.0813L35.6617 19.6396Z"
+                                    fill="#D62822" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_263_621">
+                                    <rect width="48" height="48" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <img src="image/13 (1).png" alt="" class="main-bestseller__img">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">Combo funny</h3>
+                    <p class="main-bestseller__desc">fried chicken balls, french fries</p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">10.3$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+
+                <div class="main-bestseller__product">
+
+                    <img src="image/13 (2).png" alt="" class="main-bestseller__img">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">‌Chicken with Spicy Sauce</h3>
+                    <p class="main-bestseller__desc">chili garlic sauce, black pepper sauce</p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">7.2$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+
+                <div class="main-bestseller__product">
+
+                    <div class="main-bestseller__discount">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_263_621)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.8341 2.50833C26.5113 0.763884 23.8889 0.763884 22.5661 2.50834L19.5975 6.42339C19.1258 7.0455 18.3552 7.36472 17.5817 7.25837L12.7142 6.58913C10.5454 6.29093 8.69103 8.1453 8.98923 10.3141L9.65847 15.1816C9.76482 15.9551 9.4456 16.7257 8.82349 17.1974L4.90844 20.166C3.16398 21.4888 3.16399 24.1112 4.90844 25.434L8.82349 28.4026C9.4456 28.8743 9.76482 29.6449 9.65847 30.4184L8.98923 35.2859C8.69103 37.4547 10.5454 39.3091 12.7142 39.0109L17.5817 38.3416C18.3552 38.2353 19.1258 38.5545 19.5975 39.1766L22.5661 43.0917C23.8889 44.8361 26.5113 44.8361 27.8341 43.0917L30.8027 39.1766C31.2744 38.5545 32.045 38.2353 32.8185 38.3416L37.686 39.0109C39.8548 39.3091 41.7092 37.4547 41.411 35.2859L40.7417 30.4184C40.6354 29.6449 40.9546 28.8743 41.5767 28.4026L45.4918 25.434C47.2362 24.1112 47.2362 21.4888 45.4918 20.166L41.5767 17.1974C40.9546 16.7257 40.6354 15.9551 40.7417 15.1816L41.411 10.3141C41.7092 8.1453 39.8548 6.29093 37.686 6.58913L32.8185 7.25837C32.045 7.36472 31.2744 7.0455 30.8027 6.42339L27.8341 2.50833Z"
+                                    fill="#FFC300" />
+                                <path
+                                    d="M17.9384 30.3096C17.4208 30.5013 16.9223 30.5835 16.443 30.5562C15.9685 30.5187 15.5552 30.3817 15.2031 30.1452C14.8484 29.9012 14.588 29.5668 14.4222 29.142L15.5138 28.7378C15.6874 29.0915 15.9527 29.3473 16.3097 29.5051C16.6715 29.6527 17.1074 29.632 17.6176 29.4431C18.1052 29.2626 18.4434 29.0009 18.6321 28.658C18.8255 28.3049 18.8514 27.937 18.7097 27.5544C18.5986 27.2543 18.4258 27.041 18.1913 26.9146C17.9568 26.7881 17.6977 26.722 17.414 26.7161C17.1303 26.7103 16.7576 26.7289 16.2958 26.7719C15.7281 26.8285 15.2618 26.8477 14.8967 26.8293C14.5391 26.8081 14.195 26.6967 13.8643 26.495C13.5384 26.2829 13.2852 25.9331 13.1046 25.4454C12.9463 25.0178 12.9148 24.5987 13.0101 24.188C13.1055 23.7774 13.3149 23.4098 13.6383 23.0853C13.9693 22.758 14.3898 22.4999 14.9 22.311C15.6352 22.0388 16.3034 22.0004 16.9047 22.1957C17.5134 22.3883 17.9603 22.7774 18.2454 23.3628L17.12 23.7795C16.9714 23.4933 16.7166 23.2891 16.3557 23.1668C15.992 23.037 15.5813 23.0568 15.1237 23.2263C14.6961 23.3846 14.3889 23.6263 14.2021 23.9514C14.0126 24.269 13.9915 24.6266 14.1387 25.0242C14.2443 25.3093 14.4092 25.5127 14.6334 25.6344C14.8651 25.7533 15.1153 25.8185 15.384 25.8299C15.6574 25.831 16.0301 25.8125 16.5022 25.7741C17.0726 25.725 17.5418 25.7134 17.9096 25.7393C18.2747 25.7576 18.624 25.8714 18.9574 26.0807C19.288 26.2824 19.545 26.6309 19.7284 27.126C19.87 27.5086 19.9021 27.9062 19.8245 28.3188C19.747 28.7315 19.5483 29.1164 19.2284 29.4737C18.9086 29.831 18.4786 30.1096 17.9384 30.3096ZM20.4944 25.7419C20.261 25.1117 20.1844 24.5131 20.2645 23.946C20.3417 23.3714 20.5531 22.8709 20.8985 22.4444C21.2514 22.0152 21.7017 21.6991 22.2494 21.4963C22.7895 21.2963 23.3015 21.239 23.7852 21.3243C24.2689 21.4097 24.6736 21.5925 24.9992 21.8729L24.5825 20.7476L25.6178 20.3642L27.9013 26.5311L26.866 26.9144L26.4409 25.7666C26.3717 26.2017 26.179 26.6143 25.8628 27.0044C25.5513 27.3842 25.1292 27.6727 24.5965 27.8699C24.0489 28.0727 23.5037 28.121 22.9611 28.0148C22.4184 27.9086 21.9293 27.6589 21.4937 27.2657C21.058 26.8725 20.7249 26.3646 20.4944 25.7419ZM25.7201 23.8198C25.5479 23.3546 25.3041 22.9842 24.9887 22.7086C24.6734 22.4329 24.3211 22.2648 23.9318 22.2042C23.5473 22.1333 23.1637 22.1687 22.7811 22.3104C22.3985 22.452 22.083 22.6712 21.8345 22.968C21.5861 23.2647 21.432 23.6203 21.3722 24.0349C21.3125 24.4494 21.3687 24.8893 21.5409 25.3544C21.7159 25.827 21.9625 26.2049 22.2806 26.4881C22.596 26.7637 22.9459 26.937 23.3304 27.0079C23.7122 27.0713 24.0944 27.0321 24.477 26.8905C24.8596 26.7488 25.1751 26.5296 25.4236 26.2329C25.6767 25.9259 25.8332 25.5651 25.8929 25.1505C25.9499 24.7285 25.8923 24.2849 25.7201 23.8198ZM27.5724 17.1836L30.6559 25.5111L29.6318 25.8903L26.5484 17.5628L27.5724 17.1836ZM36.7986 19.4617C36.8709 19.6568 36.936 19.8672 36.9941 20.0931L32.0651 21.9182C32.3276 22.512 32.7103 22.912 33.2132 23.1182C33.7208 23.3141 34.2447 23.3121 34.7849 23.1121C35.2275 22.9482 35.5576 22.7108 35.7752 22.3999C35.9975 22.0787 36.1048 21.7234 36.097 21.3338L37.1999 20.9255C37.2543 21.5792 37.1034 22.1854 36.7471 22.7438C36.3881 23.2948 35.841 23.7064 35.1057 23.9786C34.5206 24.1953 33.9468 24.2584 33.3844 24.1681C32.8296 24.075 32.332 23.8369 31.8916 23.454C31.4485 23.0636 31.1088 22.5496 30.8727 21.9119C30.6366 21.2742 30.5572 20.668 30.6345 20.0934C30.7117 19.5189 30.932 19.0193 31.2952 18.5948C31.6631 18.16 32.1471 17.8314 32.7473 17.6092C33.3325 17.3925 33.8974 17.3284 34.4419 17.4168C34.9865 17.5052 35.4622 17.73 35.8689 18.0913C36.2804 18.4422 36.5903 18.899 36.7986 19.4617ZM35.6617 19.6396C35.5172 19.2495 35.3073 18.9476 35.032 18.7339C34.7539 18.5127 34.4384 18.3864 34.0855 18.3549C33.7374 18.3132 33.3832 18.359 33.0231 18.4924C32.5055 18.6841 32.124 19.013 31.8786 19.4792C31.6407 19.9427 31.6038 20.4767 31.768 21.0813L35.6617 19.6396Z"
+                                    fill="#D62822" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_263_621">
+                                    <rect width="48" height="48" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <img src="image/20220905-113313 1.png" alt="" class="main-bestseller__img">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">Salad mixed vinegar </h3>
+                    <p class="main-bestseller__desc">Salad, vinegar, tomato</p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">5.4$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+
+                <div class="main-bestseller__product">
+
+                    <img src="image/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt=""
+                        class="main-bestseller__img">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">Cheese Beef Hamburger</h3>
+                    <p class="main-bestseller__desc">fried chicken balls, french fries</p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">5.39$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+
+                <div class="main-bestseller__product">
+
+                    <div class="main-bestseller__discount">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_263_621)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.8341 2.50833C26.5113 0.763884 23.8889 0.763884 22.5661 2.50834L19.5975 6.42339C19.1258 7.0455 18.3552 7.36472 17.5817 7.25837L12.7142 6.58913C10.5454 6.29093 8.69103 8.1453 8.98923 10.3141L9.65847 15.1816C9.76482 15.9551 9.4456 16.7257 8.82349 17.1974L4.90844 20.166C3.16398 21.4888 3.16399 24.1112 4.90844 25.434L8.82349 28.4026C9.4456 28.8743 9.76482 29.6449 9.65847 30.4184L8.98923 35.2859C8.69103 37.4547 10.5454 39.3091 12.7142 39.0109L17.5817 38.3416C18.3552 38.2353 19.1258 38.5545 19.5975 39.1766L22.5661 43.0917C23.8889 44.8361 26.5113 44.8361 27.8341 43.0917L30.8027 39.1766C31.2744 38.5545 32.045 38.2353 32.8185 38.3416L37.686 39.0109C39.8548 39.3091 41.7092 37.4547 41.411 35.2859L40.7417 30.4184C40.6354 29.6449 40.9546 28.8743 41.5767 28.4026L45.4918 25.434C47.2362 24.1112 47.2362 21.4888 45.4918 20.166L41.5767 17.1974C40.9546 16.7257 40.6354 15.9551 40.7417 15.1816L41.411 10.3141C41.7092 8.1453 39.8548 6.29093 37.686 6.58913L32.8185 7.25837C32.045 7.36472 31.2744 7.0455 30.8027 6.42339L27.8341 2.50833Z"
+                                    fill="#FFC300" />
+                                <path
+                                    d="M17.9384 30.3096C17.4208 30.5013 16.9223 30.5835 16.443 30.5562C15.9685 30.5187 15.5552 30.3817 15.2031 30.1452C14.8484 29.9012 14.588 29.5668 14.4222 29.142L15.5138 28.7378C15.6874 29.0915 15.9527 29.3473 16.3097 29.5051C16.6715 29.6527 17.1074 29.632 17.6176 29.4431C18.1052 29.2626 18.4434 29.0009 18.6321 28.658C18.8255 28.3049 18.8514 27.937 18.7097 27.5544C18.5986 27.2543 18.4258 27.041 18.1913 26.9146C17.9568 26.7881 17.6977 26.722 17.414 26.7161C17.1303 26.7103 16.7576 26.7289 16.2958 26.7719C15.7281 26.8285 15.2618 26.8477 14.8967 26.8293C14.5391 26.8081 14.195 26.6967 13.8643 26.495C13.5384 26.2829 13.2852 25.9331 13.1046 25.4454C12.9463 25.0178 12.9148 24.5987 13.0101 24.188C13.1055 23.7774 13.3149 23.4098 13.6383 23.0853C13.9693 22.758 14.3898 22.4999 14.9 22.311C15.6352 22.0388 16.3034 22.0004 16.9047 22.1957C17.5134 22.3883 17.9603 22.7774 18.2454 23.3628L17.12 23.7795C16.9714 23.4933 16.7166 23.2891 16.3557 23.1668C15.992 23.037 15.5813 23.0568 15.1237 23.2263C14.6961 23.3846 14.3889 23.6263 14.2021 23.9514C14.0126 24.269 13.9915 24.6266 14.1387 25.0242C14.2443 25.3093 14.4092 25.5127 14.6334 25.6344C14.8651 25.7533 15.1153 25.8185 15.384 25.8299C15.6574 25.831 16.0301 25.8125 16.5022 25.7741C17.0726 25.725 17.5418 25.7134 17.9096 25.7393C18.2747 25.7576 18.624 25.8714 18.9574 26.0807C19.288 26.2824 19.545 26.6309 19.7284 27.126C19.87 27.5086 19.9021 27.9062 19.8245 28.3188C19.747 28.7315 19.5483 29.1164 19.2284 29.4737C18.9086 29.831 18.4786 30.1096 17.9384 30.3096ZM20.4944 25.7419C20.261 25.1117 20.1844 24.5131 20.2645 23.946C20.3417 23.3714 20.5531 22.8709 20.8985 22.4444C21.2514 22.0152 21.7017 21.6991 22.2494 21.4963C22.7895 21.2963 23.3015 21.239 23.7852 21.3243C24.2689 21.4097 24.6736 21.5925 24.9992 21.8729L24.5825 20.7476L25.6178 20.3642L27.9013 26.5311L26.866 26.9144L26.4409 25.7666C26.3717 26.2017 26.179 26.6143 25.8628 27.0044C25.5513 27.3842 25.1292 27.6727 24.5965 27.8699C24.0489 28.0727 23.5037 28.121 22.9611 28.0148C22.4184 27.9086 21.9293 27.6589 21.4937 27.2657C21.058 26.8725 20.7249 26.3646 20.4944 25.7419ZM25.7201 23.8198C25.5479 23.3546 25.3041 22.9842 24.9887 22.7086C24.6734 22.4329 24.3211 22.2648 23.9318 22.2042C23.5473 22.1333 23.1637 22.1687 22.7811 22.3104C22.3985 22.452 22.083 22.6712 21.8345 22.968C21.5861 23.2647 21.432 23.6203 21.3722 24.0349C21.3125 24.4494 21.3687 24.8893 21.5409 25.3544C21.7159 25.827 21.9625 26.2049 22.2806 26.4881C22.596 26.7637 22.9459 26.937 23.3304 27.0079C23.7122 27.0713 24.0944 27.0321 24.477 26.8905C24.8596 26.7488 25.1751 26.5296 25.4236 26.2329C25.6767 25.9259 25.8332 25.5651 25.8929 25.1505C25.9499 24.7285 25.8923 24.2849 25.7201 23.8198ZM27.5724 17.1836L30.6559 25.5111L29.6318 25.8903L26.5484 17.5628L27.5724 17.1836ZM36.7986 19.4617C36.8709 19.6568 36.936 19.8672 36.9941 20.0931L32.0651 21.9182C32.3276 22.512 32.7103 22.912 33.2132 23.1182C33.7208 23.3141 34.2447 23.3121 34.7849 23.1121C35.2275 22.9482 35.5576 22.7108 35.7752 22.3999C35.9975 22.0787 36.1048 21.7234 36.097 21.3338L37.1999 20.9255C37.2543 21.5792 37.1034 22.1854 36.7471 22.7438C36.3881 23.2948 35.841 23.7064 35.1057 23.9786C34.5206 24.1953 33.9468 24.2584 33.3844 24.1681C32.8296 24.075 32.332 23.8369 31.8916 23.454C31.4485 23.0636 31.1088 22.5496 30.8727 21.9119C30.6366 21.2742 30.5572 20.668 30.6345 20.0934C30.7117 19.5189 30.932 19.0193 31.2952 18.5948C31.6631 18.16 32.1471 17.8314 32.7473 17.6092C33.3325 17.3925 33.8974 17.3284 34.4419 17.4168C34.9865 17.5052 35.4622 17.73 35.8689 18.0913C36.2804 18.4422 36.5903 18.899 36.7986 19.4617ZM35.6617 19.6396C35.5172 19.2495 35.3073 18.9476 35.032 18.7339C34.7539 18.5127 34.4384 18.3864 34.0855 18.3549C33.7374 18.3132 33.3832 18.359 33.0231 18.4924C32.5055 18.6841 32.124 19.013 31.8786 19.4792C31.6407 19.9427 31.6038 20.4767 31.768 21.0813L35.6617 19.6396Z"
+                                    fill="#D62822" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_263_621">
+                                    <rect width="48" height="48" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <img src="image/ice_tea_2021_11_30_16_48_46_utc 1.png" alt=""
+                        class="main-bestseller__img main-bestseller__img-small">
+                    <span class="main-bestseller__line"></span>
+                    <h3 class="main-bestseller__title">Cheese Beef Hamburger</h3>
+                    <p class="main-bestseller__desc"></p>
+                    <div class="main-bestseller__score">
+                        <span class="main-bestseller__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        (5)
+                    </div>
+                    <span class="main-bestseller__buy">
+                        <p class="main-bestseller__price">2.8$</p>
+                        <button class="main-bestseller__basket"><i class="fa fas fa-shopping-basket"></i></button>
+                    </span>
+
+                </div>
+                <a href="#" class="main-bestseller__more">See all</a>
+            </section>
+
+            <section class="main-discount">
+
+                <div class="main-discount__caption">
+                    <h1 class="main-discount__title">SALE OF</h1>
+                    <div class="main-discount__line"></div>
+                </div>
+
+                <div class="main-discount__sales">
+
+                    <div class="main-discount__box">
+                        <p class="main-discount__name">Fast food</p>
+
+                        <div class="main-discount__content">
+                            <div class="main-discount__texts">
+                                <h2 class="main-discount__info">COMBO FUNNY</h2>
+                                <p class="main-discount__desc">buy 1 funny combo get 1 coca cola</p>
+                                <div class="main-discount__prices">
+                                    <h class="main-discount__pricemain">10.3$</h>
+                                    <h3 class="main-discount__pric">10.3$</h3>
+                                </div>
+                                <button class="main-discount__btn">
+                                    <div class="main-discount__basket"><i class="fa fa-shopping-basket"></i></div>
+                                    Order now
+                                </button>
+                            </div>
+                            <img src="image/13 (1).png" alt="" class="main-discount__img">
+                        </div>
+
+                    </div>
+                    <div class="main-discount__box main-discount__box-active">
+                        <p class="main-discount__name">Fast food</p>
+
+                        <div class="main-discount__content">
+                            <div class="main-discount__texts">
+                                <h2 class="main-discount__info">Salad mixed vinegar</h2>
+                                <p class="main-discount__desc"></p>
+                                <div class="main-discount__prices">
+                                    <h class="main-discount__pricemain">10.3$</h>
+                                    <h3 class="main-discount__pric">3.4$</h3>
+                                </div>
+                                <button class="main-discount__btn">
+                                    <div class="main-discount__basket"><i class="fa fa-shopping-basket"></i></div>
+                                    Order now
+                                </button>
+                            </div>
+                            <img src="image/20220905-113313 1.png" alt="" class="main-discount__img">
+                        </div>
+
+                    </div>
+                    <div class="main-discount__box">
+                        <p class="main-discount__name">Fast food</p>
+
+                        <div class="main-discount__content">
+                            <div class="main-discount__texts">
+                                <h2 class="main-discount__info">chicken burgger</h2>
+                                <p class="main-discount__desc">fried chicken</p>
+                                <div class="main-discount__prices">
+                                    <h class="main-discount__pricemain">8.3$</h>
+                                    <h3 class="main-discount__pric">6.3$</h3>
+                                </div>
+                                <button class="main-discount__btn">
+                                    <div class="main-discount__basket"><i class="fa fa-shopping-basket"></i></div>
+                                    Order now
+                                </button>
+                            </div>
+                            <img src="image/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt=""
+                                class="main-discount__img">
+                        </div>
+
+
+
+                    </div>
+
+            </section>
+
+        </div>
+
+        <section class="main-app">
+            <div class="main-app__loc">
+                <img src="image/Group 22.png" class="main-app__img">
+            </div>
+            <div class="main-app__content">
+                <h class="main-app__desc">Exclusive offers and more</h>
+                <h4 class="main-app__title">MCDONALD’S MOBILE APP</h4>
+                <p class="main-app__text">As a global No. 1 fast food brand, McDonald's wishes to bring
+                    customers not only delicious and hygienic food of international standards but also the best
+                    service experience.</p>
+                <div class="main-app__imgs">
+                    <img src="image/ammount.png" class="main-app__googleimg">
+                    <img src="image/ammount (1).png" class="main-app__appimg">
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="main-findloc">
+                <img src="image/location1.png" alt="" class="main-findloc__salad">
+                <h2 class="main-findloc__title">FIND A FOODELI STORE NEAR YOU</h2>
+                <p class="main-findloc__desc">see the convenience store address with you most</p>
+                <div class="main-findloc__search">
+                    <input type="text" class="main-findloc__inp" placeholder="Typing location">
+                    <button class="main-findloc__btn">See on map</button>
+                </div>
+                <img src="image/location2.png" alt="" class="main-findloc__hamburger">
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="about">
+            <div class="about-info">
+                <img src="image/lgo.png" alt="logo" class="about-info__img">
+                <h2 class="about-info__title">Mc Donald's</h2>
+            </div>
+            <div class="about-contact">
+                <div class="about-contact__twiter"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="16"
+                        viewBox="0 0 21 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5 4.00175C18.5 4.00117 18.5 4.00058 18.5 4C18.5 3.99994 18.5 3.99988 18.5 3.99982L20.375 1.97672C20.6807 1.64695 20.4058 1.11563 19.96 1.17458L17.6108 1.48528C16.8775 0.57926 15.7564 0 14.5 0C12.2909 0 10.5 1.79086 10.5 4C10.5 4.52744 10.6021 5.03104 10.7876 5.49212C7.79119 5.42205 4.58291 4.82913 2.96086 1.6154C2.76014 1.21773 2.18475 1.1947 2.05697 1.62143C0.883241 5.54144 2.94886 10.6347 7.49978 12C6.3645 13.11 3.44612 13.4114 1.05791 13.1927C0.593179 13.1502 0.301424 13.6796 0.660808 13.9773C2.66333 15.6361 5.44071 16 7.99986 16C14.4992 16 18.999 10.501 18.5 4.00175Z"
+                            fill="#7D7C7C" />
+                    </svg></div>
+                <div class="about-contact__facebook"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+                        viewBox="0 0 21 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.5 10C20.5 14.9964 16.8357 19.1369 12.0479 19.8809C11.7558 19.9263 11.5 19.6942 11.5 19.3985V12H13.5C14.0523 12 14.5 11.5523 14.5 11C14.5 10.4477 14.0523 10 13.5 10H11.5V8C11.5 7.44772 11.9477 7 12.5 7H13.5C14.0523 7 14.5 6.55228 14.5 6C14.5 5.44772 14.0523 5 13.5 5H12.5C10.8431 5 9.5 6.34315 9.5 8V10H8.5C7.94772 10 7.5 10.4477 7.5 11C7.5 11.5523 7.94772 12 8.5 12H9.5V19.3985C9.5 19.6942 9.24425 19.9263 8.95208 19.8809C4.16427 19.1369 0.5 14.9964 0.5 10C0.5 4.47715 4.97715 0 10.5 0C16.0228 0 20.5 4.47715 20.5 10Z"
+                            fill="#7D7C7C" />
+                    </svg></div>
+                <div class="about-contact__messenger"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+                        viewBox="0 0 21 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.5 20C16.0228 20 20.5 15.5228 20.5 10C20.5 4.47715 16.0228 0 10.5 0C4.97715 0 0.5 4.47715 0.5 10C0.5 12.2512 1.24389 14.3287 2.49927 16L2.49977 18.7708C2.49989 19.4049 3.08261 19.8788 3.70344 19.7497L6.5 19.1679C7.72492 19.7031 9.07779 20 10.5 20ZM5.20509 11.707L7.95568 7.7776C8.26078 7.34174 8.85374 7.22109 9.30491 7.50307L11.9525 9.15781C12.2858 9.36612 12.7102 9.35988 13.0372 9.14187L15.2092 7.69385C15.3783 7.58113 15.6034 7.60343 15.7471 7.74711C15.8934 7.89337 15.9135 8.12353 15.7949 8.29299L13.0443 12.2224C12.7392 12.6583 12.1463 12.7789 11.6951 12.4969L9.0475 10.8422C8.71421 10.6339 8.28981 10.6401 7.9628 10.8581L5.79077 12.3062C5.6217 12.4189 5.39657 12.3966 5.25289 12.2529C5.10663 12.1066 5.08647 11.8765 5.20509 11.707Z"
+                            fill="#7D7C7C" />
+                    </svg></div>
+            </div>
+        </div>
+
+        <div class="links">
+            <h3 class="links__title">USEFUL LINKS</h3>
+            <p class="links__link">Homepage</p>
+            <p class="links__link">Menu</p>
+            <p class="links__link">Sale off</p>
+            <p class="links__link">News</p>
+            <p class="links__link">contact</p>
+        </div>
+
+        <div class="openung-hour">
+            <h3 class="openung-hour__title">OPENING LINKS</h3>
+            <p class="openung-hour__hour">Monday-Friday:9:00 - 23:00h</p>
+            <p class="openung-hour__hour">Saturday:09:00 - 16:00h</p>
+            <p class="openung-hour__hour">sunday:12:00-18h </p>
+        </div>
+
+    </footer>
+
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>
