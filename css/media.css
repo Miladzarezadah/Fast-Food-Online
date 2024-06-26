@@ -79,6 +79,7 @@
         -moz-transition: all 0.7s;
         -ms-transition: all 0.7s;
         -o-transition: all 0.7s;
+        z-index:10;
     }
 
     .menu-active {
